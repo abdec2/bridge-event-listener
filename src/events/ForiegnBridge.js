@@ -3,6 +3,8 @@ const ethers = require('ethers');
 const abi = require('./../abi/foriegn_bridge.json');
 const contractAddress = process.env.FORIEGN_BRIDGE_ADDRESS;
 
+const { Queue } = require('bullmq');
+
 const foriegnBridgeEvents = () => {
     const provider = new ethers.WebSocketProvider(process.env.FORIEGN_RPC_WS);
     const contract = new ethers.Contract(contractAddress, abi, provider);
