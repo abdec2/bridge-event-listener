@@ -1,0 +1,68 @@
+0x5baA0f14D09864929c5fC8AbDfDc466dcb72be9d
+1000000000000000n
+1708906842n
+ContractEventPayload {
+  filter: 'TokensLocked',
+  emitter: <ref *1> Contract {
+    target: '0x1493189aa632cD03ec140B4dC7D764CD0239b084',
+    interface: Interface {
+      fragments: [Array],
+      deploy: [ConstructorFragment],
+      fallback: null,
+      receive: true
+    },
+    runner: WebSocketProvider {},
+    filters: {},
+    fallback: [AsyncFunction: method] {
+      _contract: [Circular *1],
+      estimateGas: [AsyncFunction: estimateGas],
+      populateTransaction: [AsyncFunction: populateTransaction],
+      send: [AsyncFunction: send],
+      staticCall: [AsyncFunction: staticCall]
+    },
+    [Symbol(_ethersInternal_contract)]: {}
+  },
+  log: EventLog {
+    provider: WebSocketProvider {},
+    transactionHash: '0x490ff5853e250bb99932a12454321e0a3d63188ee9af5738b7408ba98a330226',
+    blockHash: '0x0fca439017c99cb3185ccfbe31dd80483f40be66bb07098a28b3015c0abcf3a4',
+    blockNumber: 46355957,
+    removed: false,
+    address: '0x1493189aa632cD03ec140B4dC7D764CD0239b084',
+    data: '0x00000000000000000000000000000000000000000000000000038d7ea4c680000000000000000000000000000000000000000000000000000000000065dbd95a',
+    topics: [
+      '0xd741e738a23fd18a03a26522320d9fc6cac1fed483e215ea9150fbc2fc43385d',
+      '0x0000000000000000000000005baa0f14d09864929c5fc8abdfdc466dcb72be9d'
+    ],
+    index: 7,
+    transactionIndex: 3,
+    interface: Interface {
+      fragments: [Array],
+      deploy: [ConstructorFragment],
+      fallback: null,
+      receive: true
+    },
+    fragment: EventFragment {
+      type: 'event',
+      inputs: [Array],
+      name: 'TokensLocked',
+      anonymous: false
+    },
+    args: Result(3) [
+      '0x5baA0f14D09864929c5fC8AbDfDc466dcb72be9d',
+      1000000000000000n,
+      1708906842n
+    ]
+  },
+  args: Result(3) [
+    '0x5baA0f14D09864929c5fC8AbDfDc466dcb72be9d',
+    1000000000000000n,
+    1708906842n
+  ],
+  fragment: EventFragment {
+    type: 'event',
+    inputs: [ [ParamType], [ParamType], [ParamType] ],
+    name: 'TokensLocked',
+    anonymous: false
+  }
+}
