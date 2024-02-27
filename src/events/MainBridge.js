@@ -5,6 +5,7 @@ const contractAddress = process.env.HOME_BRIDGE_ADDRESS;
 
 const { Queue } = require('bullmq');
 
+
 const MainBridgeEvents = () => {
     const provider = new ethers.WebSocketProvider(process.env.HOME_RPC_WS);
     const contract = new ethers.Contract(contractAddress, abi, provider);

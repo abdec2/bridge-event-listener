@@ -1,10 +1,10 @@
 require("dotenv").config();
-const { MainBridgeEvents }  = require('./events/MainBridge')
-const { foriegnBridgeEvents } = require('./events/ForiegnBridge')
+const { startHomeConnection }  = require('./events/EventListenerHome')
+const { startForiegnConnection } = require('./events/EventListenerForiegn')
 
 const main = () => {
-    MainBridgeEvents()
-    foriegnBridgeEvents()
+    startHomeConnection()
+    startForiegnConnection()
     console.log('Listening.....')
 }
 
